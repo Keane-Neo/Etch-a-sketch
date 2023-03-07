@@ -6,7 +6,9 @@ Create a sketch of your own!
 2. Hover onto the grid boxes to "draw" on it
 
 What I've learned from this project:
-Changing grid size based on user input
-CSS Grid
-DOM event manipulation
-Creating hover effect
+
+- Changing grid size based on user input
+- CSS Grid
+- DOM event manipulation
+- Creating hover effect
+- Creating event listeners
