@@ -44,20 +44,19 @@ const createGrid = (num) => {
     gridItem.classList.add("grid-item");
     frame.appendChild(gridItem);
   }
+  hoverEffect();
 };
 
-// Hover Effect
-const addClass = (box) => {
-  box.classList.toggle("selected");
+// Hover Effect for grid items
+const hoverEffect = () => {
+  const toggleClass = (box) => {
+    box.classList.toggle("selected");
+  };
+
+  const boxes = document.querySelectorAll(".grid-item");
+
+  boxes.forEach((box) => {
+    box.addEventListener("mousedown", () => toggleClass(box));
+    box.addEventListener("mouseenter", () => toggleClass(box));
+  });
 };
-
-const removeClass = (box) => {
-  box.classList.toggle("selected");
-};
-
-const boxes = document.querySelectorAll(".grid-item");
-
-boxes.forEach((box) => {
-  box.addEventListener("mouseover", () => addClass(box));
-  box.addEventListener("mouseout", () => removeClass(box));
-});
