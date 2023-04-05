@@ -12,3 +12,5 @@ What I've learned from this project:
 - DOM event manipulation
 - Creating hover effect
 - Creating event listeners
+
+Live Link: https://keane-neo.github.io/Etch-a-sketch/
